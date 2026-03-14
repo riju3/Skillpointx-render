@@ -1,0 +1,247 @@
+/* ============================================================
+   SKILLPOINTX ADMIN — RESPONSIVE CSS (Mobile & Tablet)
+   Mobile  : max-width 767px
+   Tablet  : 768px – 1024px
+   Desktop : completely untouched
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+/* ============================================================
+   MUI LAYOUT — prevent drawer negative margin on mobile
+   ============================================================ */
+@media (max-width: 1024px) {
+  main, [class*="MuiBox-root"] {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ============================================================
+   LOGIN & REGISTER PAGE
+   ============================================================ */
+@media (max-width: 767px) {
+  .page {
+    margin-top: 20px !important;
+    padding: 0 16px !important;
+  }
+  .page .form {
+    width: 100% !important;
+    padding: 16px !important;
+  }
+  #email, #password {
+    width: 100% !important;
+  }
+  .button {
+    width: 100% !important;
+  }
+  /* Login/Register title */
+  .page .title h4,
+  .page .title .MuiTypography-root {
+    font-size: 1.4rem !important;
+    margin-top: 20px !important;
+  }
+  /* Input fields full width */
+  .MuiTextField-root {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page .form {
+    width: 70% !important;
+    padding: 20px !important;
+  }
+  #email, #password {
+    width: 100% !important;
+  }
+  .MuiTextField-root {
+    width: 100% !important;
+  }
+}
+
+/* ============================================================
+   ADMIN LANDING PAGE (Dashboard)
+   ============================================================ */
+@media (max-width: 767px) {
+  .landing-page-container {
+    flex-direction: column !important;
+    padding: 80px 16px 20px 16px !important;
+    width: 100% !important;
+    gap: 24px !important;
+  }
+  .title {
+    font-size: 2rem !important;
+    word-wrap: break-word !important;
+  }
+  .description {
+    font-size: 1rem !important;
+  }
+  .img-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+  }
+  .button-style {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .landing-page-container {
+    flex-direction: column !important;
+    padding: 100px 40px 20px 40px !important;
+    gap: 32px !important;
+  }
+  .title {
+    font-size: 3rem !important;
+  }
+  .img-content {
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+}
+
+/* ============================================================
+   ALL COURSES PAGE — Course Cards Grid
+   ============================================================ */
+@media (max-width: 767px) {
+  .all-courses {
+    padding: 0 12px !important;
+    margin: 20px 0 0 0 !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  /* Course cards full width on mobile */
+  .MuiCard-root {
+    width: calc(100vw - 32px) !important;
+    max-width: 100% !important;
+  }
+  /* "Courses" heading — remove large left margin */
+  .all-courses + .MuiTypography-root,
+  [style*="marginLeft: 210px"] {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .all-courses {
+    padding: 0 24px !important;
+    margin: 0 !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+  .MuiCard-root {
+    max-width: 320px !important;
+  }
+}
+
+/* ============================================================
+   CREATE / UPDATE COURSE FORM
+   ============================================================ */
+@media (max-width: 767px) {
+  .page .form .input,
+  .input {
+    width: 100% !important;
+  }
+  /* All MUI TextFields in the form */
+  .page .form .MuiTextField-root,
+  .page .form .MuiFormControl-root {
+    width: 100% !important;
+  }
+  /* Form card full width */
+  .page .MuiCard-root {
+    width: calc(100vw - 32px) !important;
+    max-width: 100% !important;
+  }
+  /* Create/Update heading */
+  .page .MuiTypography-h4 {
+    font-size: 1.4rem !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .input {
+    width: 100% !important;
+  }
+  .page .form .MuiTextField-root,
+  .page .form .MuiFormControl-root {
+    width: 100% !important;
+  }
+  .page .MuiCard-root {
+    width: 80% !important;
+  }
+}
+
+/* ============================================================
+   SINGLE COURSE PAGE (CoursePage)
+   ============================================================ */
+@media (max-width: 767px) {
+  .single-course {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 80px !important;
+    gap: 20px !important;
+    padding: 0 16px !important;
+  }
+  .course-title {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  .text-container {
+    margin-left: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .des {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  /* Course overview card */
+  .single-course .MuiCard-root {
+    width: calc(100vw - 32px) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single-course {
+    margin-top: 100px !important;
+    gap: 30px !important;
+    padding: 0 24px !important;
+  }
+  .course-title {
+    font-size: 32px !important;
+  }
+}
+
+/* ============================================================
+   APP NAVBAR (MUI AppBar + Drawer)
+   ============================================================ */
+@media (max-width: 767px) {
+  /* AppBar title font size */
+  .MuiToolbar-root .MuiTypography-h6 {
+    font-size: 1rem !important;
+  }
+  /* Drawer overlay fix */
+  .MuiDrawer-paper {
+    width: 240px !important;
+  }
+  /* Toolbar buttons smaller */
+  .MuiToolbar-root .MuiButton-root {
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+  }
+}

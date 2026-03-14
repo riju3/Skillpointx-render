@@ -1,0 +1,429 @@
+/* ============================================================
+   SKILLPOINTX — RESPONSIVE CSS (Mobile & Tablet)
+   Mobile  : max-width 767px
+   Tablet  : 768px – 1024px
+   Desktop : untouched
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+/* ============================================================
+   HEADER & NAVBAR
+   ============================================================ */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .left-header, .right-header {
+    width: 100% !important;
+    height: auto !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+  }
+  .left-header1 img { height: 6vh !important; }
+  .left-header2 {
+    width: 100% !important;
+    font-size: 16px !important;
+    height: auto !important;
+  }
+  .right-header1, .right-header2 {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 14px !important;
+    gap: 6px !important;
+  }
+  .navbar {
+    height: auto !important;
+    flex-direction: column !important;
+  }
+  .left-navbar, .right-navbar {
+    width: 100% !important;
+    height: auto !important;
+    padding: 8px 0 !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .menu-list {
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .menu-list li a { font-size: 14px !important; }
+  .right-navbar1 input { width: 180px !important; }
+  .notification marquee { font-size: 1rem !important; }
+  .main { overflow-x: hidden !important; width: 100% !important; }
+}
+
+/* ============================================================
+   MUI LAYOUT FIX — prevent drawer from shifting content
+   ============================================================ */
+@media (max-width: 1024px) {
+  main, [class*="MuiBox-root"] {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ============================================================
+   LOGIN / REGISTER FORM
+   ============================================================ */
+@media (max-width: 767px) {
+  .page { margin-top: 20px !important; padding: 0 16px !important; }
+  .page .form { width: 100% !important; padding: 16px !important; }
+  #email, #password { width: 100% !important; }
+  .button { width: 100% !important; }
+  .login { height: auto !important; padding: 20px 16px !important; }
+  .login table { width: 100% !important; }
+  .login th { font-size: 32px !important; padding: 12px !important; }
+  .login td { font-size: 14px !important; display: block !important; width: 100% !important; }
+  .login input { width: 100% !important; font-size: 14px !important; }
+  .login button { width: 100% !important; height: auto !important; padding: 10px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #email, #password { width: 100% !important; }
+  .login table { width: 80% !important; }
+}
+
+/* ============================================================
+   LANDING PAGE (client area)
+   ============================================================ */
+@media (max-width: 767px) {
+  .landing-page-container {
+    flex-direction: column !important;
+    padding: 80px 16px 20px 16px !important;
+    width: 100% !important;
+    gap: 24px !important;
+  }
+  .title { font-size: 1.6rem !important; word-wrap: break-word !important; }
+  .description { font-size: 1rem !important; }
+  .img-content { width: 100% !important; max-width: 100% !important; }
+  .button-style { width: 100% !important; padding: 12px !important; font-size: 1rem !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .landing-page-container {
+    flex-direction: column !important;
+    padding: 100px 40px 20px 40px !important;
+    gap: 32px !important;
+  }
+  .title { font-size: 2rem !important; }
+  .img-content { width: 100% !important; max-width: 600px !important; }
+}
+
+/* ============================================================
+   ALL COURSES & SINGLE COURSE
+   ============================================================ */
+@media (max-width: 767px) {
+  .all-courses {
+    padding: 0 12px !important;
+    margin: 20px 0 0 0 !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+  .MuiCard-root { width: calc(100vw - 24px) !important; max-width: 100% !important; }
+  .single-course {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 80px !important;
+    gap: 20px !important;
+    padding: 0 16px !important;
+  }
+  .course-title { font-size: 22px !important; text-align: center !important; }
+  .text-container { margin-left: 0 !important; align-items: center !important; }
+  .des { width: 100% !important; font-size: 16px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .all-courses { padding: 0 24px !important; margin: 0 !important; justify-content: center !important; }
+  .single-course { margin-top: 100px !important; padding: 0 24px !important; }
+  .course-title { font-size: 32px !important; }
+}
+
+/* ============================================================
+   HOMEPAGE BANNER
+   ============================================================ */
+@media (max-width: 767px) {
+  .banner { flex-direction: column !important; height: auto !important; }
+  .left-banner, .right-banner { width: 100% !important; height: auto !important; }
+  .left-banner img { height: 30vh !important; width: 100% !important; }
+  .right-banner h3 { font-size: 18px !important; height: auto !important; padding: 10px !important; text-align: center !important; }
+  .right-banner marquee { height: 25vh !important; width: 92% !important; padding-left: 4% !important; padding-right: 4% !important; font-size: 14px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner { flex-direction: column !important; height: auto !important; }
+  .left-banner, .right-banner { width: 100% !important; height: auto !important; }
+  .left-banner img { height: 40vh !important; }
+}
+
+/* ============================================================
+   CATEGORY CIRCLES — FIXED
+   ============================================================ */
+@media (max-width: 767px) {
+  .catagory-top h2 {
+    font-size: 18px !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    padding: 0 12px !important;
+    white-space: normal !important;
+  }
+  .catagory {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 12px !important;
+    height: auto !important;
+    justify-items: center !important;
+    align-items: center !important;
+  }
+  .cat-1, .cat-2, .cat-3,
+  .cat-4, .cat-5, .cat-6 {
+    height: 110px !important;
+    width: 110px !important;
+    font-size: 13px !important;
+    min-height: unset !important;
+    min-width: unset !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .catagory {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    height: auto !important;
+    gap: 20px !important;
+    padding: 20px !important;
+    justify-items: center !important;
+  }
+  .cat-1, .cat-2, .cat-3,
+  .cat-4, .cat-5, .cat-6 {
+    height: 130px !important;
+    width: 130px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ============================================================
+   SECOND BANNER
+   ============================================================ */
+@media (max-width: 767px) {
+  .second-banner { flex-direction: column !important; height: auto !important; }
+  .second-banner1, .second-banner2 { width: 100% !important; height: auto !important; }
+  .second-banner1 img { height: auto !important; width: 100% !important; }
+  .second-banner2 { padding: 16px !important; }
+  .second-banner2-up { font-size: 2.5vh !important; height: auto !important; text-align: center !important; }
+  .second-banner2-down p { font-size: 14px !important; padding: 8px !important; word-break: break-word !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .second-banner { flex-direction: column !important; height: auto !important; }
+  .second-banner1, .second-banner2 { width: 100% !important; height: auto !important; }
+  .second-banner1 img { width: 100% !important; height: auto !important; }
+}
+
+/* ============================================================
+   AVAILABLE COURSES HEADING
+   ============================================================ */
+@media (max-width: 767px) {
+  .available-courses {
+    overflow: hidden !important;
+    padding: 0 12px !important;
+  }
+  .available-courses h3 {
+    font-size: 16px !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+/* ============================================================
+   COURSE IMAGE CARDS + DETAIL CARDS
+   ============================================================ */
+@media (max-width: 767px) {
+  .course { flex-wrap: wrap !important; height: auto !important; gap: 12px !important; padding: 12px !important; }
+  .course-1, .course-2, .course-3, .course-4 { width: 44vw !important; height: 25vw !important; }
+  .course-details { flex-direction: column !important; align-items: center !important; padding: 12px !important; }
+  .course-card { width: 90vw !important; margin-bottom: 12px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .course { flex-wrap: wrap !important; height: auto !important; gap: 16px !important; padding: 16px !important; }
+  .course-details { flex-wrap: wrap !important; justify-content: center !important; }
+}
+
+/* ============================================================
+   ABOUT PAGE — FIXED OVERLAPPING TEXT BOXES
+   ============================================================ */
+@media (max-width: 767px) {
+  .content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .content-up {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
+    gap: 16px !important;
+    padding: 12px !important;
+    position: static !important;
+  }
+  .content-up-left {
+    width: 100% !important;
+    height: 250px !important;
+    position: static !important;
+    overflow: hidden !important;
+  }
+  .content-up-right {
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+    position: static !important;
+    overflow: visible !important;
+  }
+  .content-up-right p {
+    font-size: 15px !important;
+    padding: 12px !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .content-down {
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    margin-top: 0 !important;
+    padding: 12px !important;
+    background-color: whitesmoke !important;
+  }
+  .content-down p {
+    font-size: 15px !important;
+    display: block !important;
+    height: auto !important;
+    padding: 8px !important;
+    position: static !important;
+  }
+  .about-1 { height: auto !important; padding: 16px !important; }
+  .about-1 h1 { font-size: 4vh !important; text-align: center !important; }
+
+  /* Teachers */
+  .teachers-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .teachers-inner h2 { font-size: 1.6rem !important; }
+  .teacher-card { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+  .teacher-socials { justify-content: center !important; }
+
+  /* Location */
+  .location-section { flex-direction: column !important; padding: 16px !important; }
+  .location-right { min-height: 250px !important; height: 250px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .content-up {
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 20px !important;
+    padding: 16px !important;
+    position: static !important;
+  }
+  .content-up-left, .content-up-right {
+    width: 100% !important;
+    height: 350px !important;
+    position: static !important;
+  }
+  .content-up-right { height: auto !important; }
+  .content-down { height: auto !important; padding: 20px !important; position: static !important; }
+  .teachers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .location-section { flex-direction: column !important; }
+  .location-right { height: 300px !important; }
+}
+
+/* ============================================================
+   FAQ & FOOTER
+   ============================================================ */
+@media (max-width: 767px) {
+  .lastpart1 h3 { font-size: 4vh !important; text-align: center !important; padding: 16px !important; }
+  .lastpart2 { height: auto !important; padding: 10px 16px !important; }
+  .popup-box { width: 90vw !important; padding: 16px !important; }
+  .footer { height: auto !important; padding: 12px !important; text-align: center !important; font-size: 13px !important; }
+}
+
+/* ============================================================
+   CHECKOUT
+   ============================================================ */
+@media (max-width: 767px) {
+  .checkoutFormContainer { padding: 0 16px !important; }
+  .checkoutForm { width: 100% !important; margin-top: 60px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .checkoutForm { width: 80% !important; }
+}
+
+/* ── Final About page overlap fix ── */
+@media (max-width: 1024px) {
+  .content,
+  .content-up,
+  .content-up-left,
+  .content-up-right,
+  .content-down {
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+  }
+  .content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .content-up {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    overflow: visible !important;
+    gap: 16px !important;
+    padding: 12px !important;
+  }
+  .content-up-left {
+    width: 100% !important;
+    height: 260px !important;
+    overflow: hidden !important;
+  }
+  .content-up-right {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    min-height: unset !important;
+  }
+  .content-up-right p {
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+    font-size: 15px !important;
+    padding: 12px !important;
+  }
+  .content-down {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 12px !important;
+    margin-top: 8px !important;
+  }
+  .content-down p {
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+    font-size: 15px !important;
+    padding: 8px !important;
+    justify-content: flex-start !important;
+  }
+}
