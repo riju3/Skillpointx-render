@@ -1,7 +1,5 @@
 # SkillPointX — Course Selling Platform
 
-## 🔑 Render Environment Variables (REQUIRED)
-
 Go to Render → course-server → Environment → Edit and add ALL of these:
 
 | KEY               | VALUE                                      |
@@ -35,11 +33,4 @@ npm install
 npm run dev
 ```
 
-## 🌐 Render URLs
-- Backend:      https://course-server-tquv.onrender.com
-- Make sure your frontend is deployed and pointing to the backend URL above.
 
-## ⚠️ Important Notes
-- Never commit your .env file to GitHub (it's in .gitignore already)
-- Always add environment variables directly in Render dashboard
-- After changing env variables on Render, trigger a manual redeploy
